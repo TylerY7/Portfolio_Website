@@ -1,176 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyler Young Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Tyler Young</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Experience">Experience</a></li>    
-                <li><a href="#Projects">Projects</a></li>    
-                <li><a href="#Contacts">Contacts</a></li>    
-            </ul>
-        </div>
-    </nav>    
+      <div class="logo">Tyler Young</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Tyler Young</div>
-        <div class="hamburger-menu" >
-            <div class="hamburger-icons" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#About" onclick="toggleMenu()">About</a></li>
-                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>    
-                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>    
-                <li><a href="#Contacts" onclick="toggleMenu()">Contacts</a></li> 
-            </div>
+      <div class="logo">Tyler Young</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            
-            <img src="./assests/" alt="Tyler Young Profile Picture">
-
+      <div class="section__pic-container">
+        <img src="./assets/Picture1_Me.jpg" alt="Tyler Young profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tyler Young</h1>
+        <p class="section__text__p2">Computer Science Student At VSU</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Tyler Young</h1>
-            <p class="section__text__p2">Computer Science Student At VSU</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assests/Resume.pdf')">Download Resume</button>
-
-                <div class="btn-container">
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#Contacts'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assests/linkedin.png" alt="Linkedln Profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/tyler-young-a2173a201/'">
-
-                <img src="./assests/github.png" alt="Github Profile"
-                class="icon" onclick="location.href='https://github.com/TylerY7'">
-            </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tyler-young-a2173a201/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/TylerY7'"
+          />
         </div>
+      </div>
     </section>
-
-    <section id="About">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assests/" alt="Profile Picture" class="about-pic">
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>402nd SWEG Intern, Warner Robins AFB, Warner Robins, GA <br> Attended multiple Hackathons hosted by local organizations</p>
             </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assests/experience.png" alt="experience-icon" class="icon">
-                        <h3>Experience</h3>
-                        <p></p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assests/education.png" alt="education" class="icon">
-                        <h3>Education</h3>
-                        <p>Computer Science Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Hello! My name is Tyler Young, and I am a senior Computer Science major at Valdosta State University, on track to graduate in Summer 2025. Over the past four years, I’ve actively engaged with my department and community—serving as the sole student ambassador for the Computer Science program and leading as president of VSU’s chapter of the Association for Computing Machinery (ACM). <br />
-
-                        My passion lies in developing innovative solutions and contributing to meaningful projects, particularly within the defense industry. This interest was solidified during my internship as a Software Engineering (SWEG) Intern at Warner Robins Air Force Base in Warner Robins, GA, where I gained hands-on experience in a mission-driven environment. I am eager to continue applying my skills and expanding my impact after graduation.
-                        
-                        </p>
-                </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science in Computer Science</p>
             </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Hello! My name is Tyler Young, and I am a senior Computer Science major at Valdosta State University, on track to graduate in Summer 2025. 
+                Over the past four years, I’ve actively engaged with my department and community—serving as the sole student ambassador for the Computer Science program and leading as president of VSU’s chapter of the Association for Computing Machinery (ACM).
+                My passion lies in developing innovative solutions and contributing to meaningful projects, particularly within the defense industry. 
+                This interest was solidified during my internship as a Software Engineering (SWEG) Intern at Warner Robins Air Force Base in Warner Robins, GA, where I gained hands-on experience in a mission-driven environment. 
+                I am eager to continue applying my skills and expanding my impact after graduation.
+            </p>
+          </div>
         </div>
-        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
-
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container"> 
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Programming Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assests/java-icon-1511x2048-6ikx8301.png" alt="Java-icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Advanced</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assests/Python-logo-notext.svg.png" alt="Java-icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assests/Go-Logo_Blue.png" alt="Java-icon" class="icon">
-                            <div>
-                                <h3>Golang</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/java-icon-1511x2048-6ikx8301.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Advanced</p>
                 </div>
-                <div class="details-containers">
-                    <h2 class="experience-sub-title">Programming Languages</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assests/SourceTree_Icon.png" alt="SourceTree-Icon" class="icon">
-                            <div>
-                                <h3>SourceTree</h3>
-                            </div>
-                        </article>
+              </article>
 
-                        <article>
-                            <img src="./assests/JavaFX_Icon.png" alt="JavaFX-icon" class="icon">
-                            <div>
-                                <h3>JavaFX</h3>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assests/Git_Icon.png" alt="Git-Icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assests/docker-mark-blue.png" alt="Docker-icon" class="icon">
-                            <div>
-                                <h3>Docker</h3>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assests/PyTorch_Icon.png" alt="PyTorch-icon" class="icon">
-                            <div>
-                                <h3>PyTorch</h3>
-                            </div>
-                        </article>
-                    </div>
+              <article>
+                <img
+                  src="./assets/Python-logo-notext.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
                 </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/Go-Logo_Blue.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Golang</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
             </div>
+          </div>
         </div>
-        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#Projects'">
+
+        <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/SourceTree_Icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SourceTree</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/JavaFX_Icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaFX</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/Git_Icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/docker-mark-blue.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/PyTorch_Icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                </div>
+              </article>
+
+            </div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-    <script src="script.js"></script>    
-</body>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Project1_Pic.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mock Auctioning System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vsu-se/24fa_team3'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CRM-Backend_Project_Pic.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Customer Relationship Management(CRM) Backend System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TylerY7/CRM-Backend-Project'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CS-4900_Project_Pic.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Classification Model</h2>
+            <div class="btn-container">
+              <p>Currently unavaiable to show Github repo/live demo due to ongoing semester.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/tyler-young-a2173a201/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
